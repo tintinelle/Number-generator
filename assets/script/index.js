@@ -25,10 +25,7 @@ const operateRandomArray = () => {
 
     for (let i = 0; i < numbers.length; i++) {
         sum += numbers[i];
-
-        if (numbers[i] !== 0) {
-            multi *= numbers[i];
-        }
+        multi *= numbers[i];
     }
 
     average = (average + sum) / 10;
