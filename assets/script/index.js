@@ -26,7 +26,7 @@ const operateRandomArray = () => {
     for (let i = 0; i < numbers.length; i++) {
         sum += numbers[i];
 
-        if (numbers[i] != 0) {
+        if (numbers[i] !== 0) {
             multi *= numbers[i];
         }
     }
@@ -34,7 +34,7 @@ const operateRandomArray = () => {
     average = (average + sum) / 10;
 
     result.innerHTML = '';
-    result.innerHTML = `Сгенерировано: ${numbers} <br/> Минимальное число: ${min} <br/> Максимальное число: ${max} <br/> Среднее арифметическое чисел равно ${average} <br/> Сумма чисел равна ${sum} <br/> Произведение чисел равно ${multi}`;
-}
+    result.innerHTML = `Сгенерировано: ${numbers} <br/> Минимальное число: ${min} <br/> Максимальное число: ${max} <br/> Среднее арифметическое чисел: ${average} <br/> Сумма чисел: ${sum} <br/> Произведение чисел: ${multi}`;
+};
 
 generateBtn.addEventListener('click', operateRandomArray);
